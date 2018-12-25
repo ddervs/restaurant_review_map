@@ -52,9 +52,9 @@
 
     <script id="hackSpotsTable" type="text/html">
         <table>
-            <tr><th class="tHeader">Name</th><th class="tHeader">City</th><th class="tHeader">Reviewer</th><th class="tHeader">Verdict</th><th class="tHeader">Price</th><th class="tHeader">Review Date</th><th class="">Elsewhere</th></tr>
+            <tr><th class="tHeader">Name</th><th class="tHeader">Address</th><th class="tHeader">Verdict</th><th class="tHeader">Price</th><th class="tHeader">Review Date</th><th class="">Elsewhere</th></tr>
             {{#rows}}
-                <tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{city}}</td><td>{{reviewer}}</td><td>{{verdict}}</td><td>{{price}}</td><td>{{reviewdate}}</td><td><a class="button" href="https://maps.google.com/maps?q={{address}},{{city}}" target="_blank">G Map</a> <a class="button" href="http://www.yelp.com/search?find_desc={{name}}&find_loc={{city}}" target="_blank">Yelp</a></td></tr>
+                <tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{address}}</td><td>{{verdict}}</td><td>{{price}}</td><td>{{reviewdate}}</td><td><a class="button" href="https://maps.google.com/maps?q={{address}},{{city}}" target="_blank">G Map</a> <a class="button" href="http://www.yelp.com/search?find_desc={{name}}&find_loc={{city}}" target="_blank">Yelp</a></td></tr>
             {{/rows}}
         </table>
     </script>
@@ -64,7 +64,7 @@
             <h4 class="fauxButton">MOST RECENT REVIEW</h4>
             <h2>{{name}}</h2>
             <p class="colorText">{{address}}<p>
-            <p class="colorText">{{city}}{{#postcode}} {{postcode}}{{/postcode}}</p>
+            <!-- <p class="colorText">{{city}}{{#postcode}} {{postcode}}{{/postcode}}</p> -->
             <ul>
                 <li><span class="category">Verdict:</span> {{verdict}}</li>
                 <li><span class="category">Price:</span> {{price}}</li>
@@ -90,7 +90,7 @@
             <h4 class="fauxButton">SELECTED REVIEW</h4>
             <h2>{{name}}</h2>
             <p class="colorText">{{address}}<p>
-            <p class="colorText">{{city}},{{#postcode}} {{postcode}}{{/postcode}}</p>
+            <!-- <p class="colorText">{{city}},{{#postcode}} {{postcode}}{{/postcode}}</p> -->
             <ul>
                 <li><span class="category">Verdict:</span> {{verdict}}</li>
                 <li><span class="category">Price:</span> {{price}}</li>
