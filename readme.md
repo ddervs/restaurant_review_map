@@ -1,5 +1,7 @@
 # Hi!
 
+I have forked the excellent [hack-spots](http://jlord.github.io/hack-spots) repo to host these restaurant reviews. I leave the original README below
+
 ![screenshot](https://raw.github.com/jlord/hack-spots/gh-pages/img/hackspotsss.png)
 
 This is the code for a website that shows the spots myself, my friends (or Twitter friends) have found to be excellent hacking spots around the whole wide world.
